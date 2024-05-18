@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+.intro-login-container {
+  display: flex;
+}
+
+.login-container,
+.register-container {
+  margin: 20px;
+}
+/* App.css */
+
+/* Default link styles */
+.nav-link {
   color: white;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition effect */
 }
 
-.App-link {
-  color: #61dafb;
+/* Link styles on hover */
+.nav-link:hover {
+  color: #f0f0f0; /* Off-white color on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Link styles when active (clicked) */
+.nav-link:active {
+  color: #f0f0f0; /* Off-white color when active */
+}
+/* App.css */
+
+.volunteer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* App.css */
+
+.form-box {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  background-color: #f0f0f0;
+}
+
+/* App.css */
+
+.partner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.partner-form-container {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  background-color: #f0f0f0;
+}
+
+.partner-image-container {
+  width: 35%;
+  margin-right: 25px;
+}
+
+.partner-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.image-box {
+  width: 40%;
+  background-color: #f0f0f0;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  background-color: #f0f0f0;
+}
+/* App.css */
+
+.donation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.donation-form-container {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.donation-image-container {
+  width: 40%;
+  margin-right: 10px;
+}
+
+.donation-image-container img {
+  width: 100%;
+  height: auto;
+}
+.logo-name-box {
+  margin-left: 10px;
+  margin-right: 5px;
+  size: 10px;
 }
