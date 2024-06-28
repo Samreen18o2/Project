@@ -1,41 +1,28 @@
-import './App.css';
-import AboutUsComponent from './components/AboutUsComponent';
-import ContactComponent from './components/ContactComponent';
-import FAQComponent from './components/FAQComponent';
-import FooterComponent from './components/FooterComponent';
-import Home from './components/Home';
-import PartnerWithUsComponent from './components/PartnerWithUsComponent';
-import ProjectsComponent from './components/ProjectsComponent';
-import UsersComponent from './components/UsersComponent';
-import DonationFormComponent from './components/DonationFormComponent';
-import VolunteerComponent from './components/VolunteerComponent';
-import ZakatCalculator from './components/ZakatCalculator';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import 'tailwindcss/tailwind.css';
+import { Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import TodoPage from './components/TodoPage';
+import Products from './components/Products';
+import Cart from './components/Cart';
+import SongList from './components/SongList';
+import MusicPlayer from './components/MusicPlayer';
+import Counter from './components/Counter';
 
 function App() {
   return (
-    <div>
-      <Router>
+    <div className="flex flex-col min-h-screen">
+      <NavBar />
+      <div className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/achievements' element={<UsersComponent />} />
-          <Route path='/donate' element={<DonationFormComponent />} />
-
-          <Route path='/about' element={<AboutUsComponent />} />
-          <Route path='/projects' element={<ProjectsComponent />} />
-          <Route
-            path='/donate/:projectId'
-            element={<DonationFormComponent />}
-          />
-          <Route path='/partner' element={<PartnerWithUsComponent />} />
-          <Route path='/contact' element={<ContactComponent />} />
-          <Route path='/zakat-calculator' element={<ZakatCalculator />} />
-          <Route path='/volunteer' element={<VolunteerComponent />} />
-          <Route path='/faq' element={<FAQComponent />} />
+          <Route path="/" element={<TodoPage />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/music" element={<SongList />} />
+          <Route path="/music/:id" element={<MusicPlayer />} />
+          <Route path="/counter" element={<Counter />} />
         </Routes>
-      </Router>
-
-      <FooterComponent />
+      </div>
     </div>
   );
 }

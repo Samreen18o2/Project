@@ -1,0 +1,8 @@
+{
+    "products": [
+      { "id": 1, "name": "Shoes", "description": "Footwear for men", "price": 10, "image": "/images/download.png" },
+      { "id": 2, "name": "Bag", "description": "School / College Bag", "price": 15, "image": "/images/bag.jpg" },
+      { "id": 3, "name": "Cup", "description": "Cup set", "price": 20, "image": "/images/cup.jpg" }
+    ]
+  }
+  
