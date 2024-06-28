@@ -9,6 +9,7 @@ const Products = () => {
   const loading = useSelector((state) => state.products.loading);
   const [showFullDescriptionForId, setShowFullDescriptionForId] = useState(null);
 
+  
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch]);
